@@ -1,0 +1,219 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F8F7FF;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 20vh;
+  padding-bottom: 10px;
+  background-color: #9381FF;
+  border-radius: 62px 0px 0px 0px;
+  box-shadow: 10px 10px 17px 2px rgba(0, 0, 0, 0.75);
+}
+@media screen and (min-width: 300px) {
+  header {
+    height: 35vh;
+  }
+}
+@media screen and (min-width: 360px) {
+  header {
+    height: 35vh;
+  }
+}
+@media screen and (min-width: 566px) {
+  header {
+    height: 30vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    height: 30vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    height: 20vh;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header {
+    height: 35vh;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90vw;
+  height: 70vh;
+  background-color: #B8B8FF;
+  border-radius: 0px 0px 62px 0px;
+  box-shadow: 10px 10px 17px 2px rgba(0, 0, 0, 0.75);
+}
+@media screen and (min-width: 300px) {
+  main {
+    height: 65vh;
+  }
+}
+@media screen and (min-width: 360px) {
+  main {
+    height: 65vh;
+  }
+}
+@media screen and (min-width: 566px) {
+  main {
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    height: 70vh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main {
+    height: 65vh;
+  }
+}
+
+.side {
+  height: 100%;
+  width: 15%;
+  background-color: #B8B8FF;
+}
+
+#right {
+  border-radius: 0px 0px 62px 0px;
+}
+
+.inner {
+  height: 100%;
+  width: 70%;
+  background-color: #B8B8FF;
+}
+
+h1 {
+  padding-top: 0vh;
+  margin-bottom: 1vh;
+  height: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+@media screen and (min-width: 300px) {
+  h1 {
+    font-size: 2.5em;
+  }
+}
+@media screen and (min-width: 360px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 566px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav > .bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1vh 1vw 1vh 1vw;
+}
+
+nav a {
+  padding-top: 0px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1em;
+  height: fit-content;
+}
+@media screen and (min-width: 300px) {
+  nav a {
+    font-size: 1.5em;
+    padding-top: 1em;
+  }
+}
+@media screen and (min-width: 360px) {
+  nav a {
+    font-size: 1.5em;
+  }
+}
+@media screen and (min-width: 566px) {
+  nav a {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  nav a {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav a {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 1440px) {
+  nav a {
+    font-size: 1em;
+  }
+}
+nav a:hover {
+  transform: rotate(5deg);
+  size: 175%;
+  transition: all 0.2s ease;
+}
+
+.content {
+  margin: 0% 10% 0% 10%;
+}
+
+img {
+  max-width: max-content;
+}
+
+/*# sourceMappingURL=styles.css.map */

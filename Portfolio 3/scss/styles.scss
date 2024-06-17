@@ -1,0 +1,194 @@
+@use './partials/queries' as q;
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F8F7FF;
+  }
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 20vh;
+    padding-bottom: 10px;
+    background-color: #9381FF;
+    border-radius: 62px 0px 0px 0px;
+    box-shadow: 10px 10px 17px 2px rgba(0,0,0,0.75);
+
+    @include q.small-phone {
+        height: 35vh;
+    }
+
+    @include q.phone {
+        height: 35vh;
+    }
+    @include q.large-phone {
+        height: 30vh;
+    }
+
+    @include q.tablet {
+        height: 30vh;
+    }
+
+    @include q.laptop {
+        height: 20vh;
+    }
+
+    @include q.desktop {
+        height: 35vh;
+    }
+    
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90vw;
+    height: 70vh;
+    background-color: #B8B8FF;
+    border-radius: 0px 0px 62px 0px;
+    box-shadow: 10px 10px 17px 2px rgba(0,0,0,0.75);
+
+    @include q.small-phone {
+        height: 65vh;
+    }
+
+    @include q.phone {
+        height: 65vh;
+    }
+    @include q.large-phone {
+        height: 70vh;
+    }
+
+    @include q.tablet {
+        height: 70vh;
+    }
+
+    @include q.laptop {
+        height: 80vh;
+    }
+
+    @include q.desktop {
+        height: 65vh;
+    }
+
+  }
+  
+  .side {
+    height: 100%;
+    width: 15%;
+    background-color: #B8B8FF;
+  }
+  #right {
+      border-radius: 0px 0px 62px 0px;
+  }
+  
+  .inner {
+    height: 100%;
+    width: 70%;
+    background-color: #B8B8FF;
+  }
+  
+  h1 {
+    padding-top: 0vh;
+    margin-bottom: 1vh;
+    height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+
+    @include q.small-phone {
+        font-size: 2.5em;
+    }
+
+    @include q.phone {
+        font-size: 3em;
+    }
+    @include q.large-phone {
+        font-size: 3em;
+    }
+
+    @include q.tablet {
+        font-size: 5em;
+    }
+
+    @include q.laptop {
+        font-size: 4em;
+    }
+
+    @include q.desktop {
+        font-size: 5em;
+
+    }
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  nav > .bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1vh 1vw 1vh 1vw;
+  }
+  
+  nav a {
+    padding-top: 0px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 1em;
+    height:fit-content;
+
+    @include q.small-phone {
+        font-size: 1.5em;
+        padding-top: 1em;
+    }
+
+    @include q.phone {
+        font-size: 1.5em;
+    }
+    @include q.large-phone {
+        font-size: 1em;
+    }
+
+    @include q.tablet {
+        font-size: 2em;
+    }
+
+    @include q.laptop {
+        font-size: 1em;
+    }
+
+    @include q.desktop {
+        font-size: 1em;
+
+    }
+  &:hover {
+    transform: rotate(5deg);
+    size: 175%;
+    transition: all 0.2s ease;
+  }
+}
+  
+  .content {
+      margin: 0% 10% 0% 10%;
+  }
+  
+  img {
+      max-width: max-content;
+  }
